@@ -4,6 +4,8 @@
 - 登录验证通过后添加返回参数
 - 登录页布局优化
 - 添加自定义中文提示
+# 登录页图片展示
+![登录页图片展示](https://raw.githubusercontent.com/xfreng/cas/master/cas-index.png)
 
 # Central Authentication Service (CAS)
 
