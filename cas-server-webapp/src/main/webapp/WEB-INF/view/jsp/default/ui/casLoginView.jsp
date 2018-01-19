@@ -62,7 +62,7 @@
 
     <section class="row">
       <label for="rand"><spring:message code="screen.welcome.label.rand" /></label>
-      <form:input cssClass="required" cssErrorClass="error" id="rand" size="25" path="rand" autocomplete="off" htmlEscape="true" />
+      <form:input cssClass="required" cssErrorClass="error" id="rand" size="25" tabindex="3" path="rand" autocomplete="off" htmlEscape="true" />
       <div style="margin-top:-30px;height:30px;width:150px;text-align:center;margin-left:200px;float:left;vertical-align:middle; display: table-cell;">
         <a href="javascript:loadImage('#sRand','${pageContext.request.contextPath}');" onclick="loadImage('#sRand','${pageContext.request.contextPath}');" style="width:130px;height:30px;">
             <span style="display: block;float:left;width:60px;height:25px;float:left;">
@@ -74,7 +74,7 @@
     </section>
     
     <section class="row check">
-      <input id="warn" name="warn" value="true" tabindex="3" accesskey="<spring:message code="screen.welcome.label.warn.accesskey" />" type="checkbox" />
+      <input id="warn" name="warn" value="true" tabindex="4" accesskey="<spring:message code="screen.welcome.label.warn.accesskey" />" type="checkbox" />
       <label for="warn"><spring:message code="screen.welcome.label.warn" /></label>
     </section>
     
@@ -83,8 +83,8 @@
       <input type="hidden" name="execution" value="${flowExecutionKey}" />
       <input type="hidden" name="_eventId" value="submit" />
 
-      <input class="btn-submit" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
-      <input class="btn-reset" name="reset" accesskey="c" value="<spring:message code="screen.welcome.button.clear" />" tabindex="5" type="reset" />
+      <input class="btn-submit" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="5" type="submit" />
+      <input class="btn-reset" name="reset" accesskey="c" value="<spring:message code="screen.welcome.button.clear" />" tabindex="6" type="reset" />
     </section>
   </form:form>
 </div>
