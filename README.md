@@ -5,7 +5,7 @@
 - 登录页布局优化
 - 添加自定义中文提示
 # 登录页图片展示
-![登录页图片展示](https://raw.githubusercontent.com/xfreng/cas/master/cas-index.png)
+![登录页图片展示](https://raw.githubusercontent.com/xfreng/cas/master/images/cas-index.png)
 
 # Central Authentication Service (CAS)
 
