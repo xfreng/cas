@@ -1,3 +1,13 @@
+# CAS服务端源码修改说明
+- 修改自定义用户名密码登录验证
+- 添加登录验证码
+- 登录验证通过后添加返回参数
+- 登录页布局优化
+- 添加自定义中文提示
+# 登录页图片展示
+![登录页图片展示](https://raw.githubusercontent.com/xfreng/cas/4.2.8/images/cas-index.png)
+
+
 # Central Authentication Service (CAS) [![License](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/apereo/cas/blob/master/LICENSE)
 [![](https://heroku-badge.herokuapp.com/?app=jasigcas&root=/cas/login)](http://jasigcas.heroku.com/cas)
 [![](https://heroku-badge.herokuapp.com/?app=jasigcasmgmt&root=/cas-services/login)](http://jasigcasmgmt.heroku.com/cas-services)
