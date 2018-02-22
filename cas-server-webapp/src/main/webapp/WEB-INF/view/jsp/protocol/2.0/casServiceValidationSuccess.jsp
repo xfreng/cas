@@ -7,19 +7,19 @@
         <c:if test="${not empty pgtIou}">
             <cas:proxyGrantingTicket>${pgtIou}</cas:proxyGrantingTicket>
         </c:if>
-        <c:if test="${fn:length(chainedAuthentications) > 0}">
-            <cas:proxies>
-                <c:forEach var="proxy" items="${chainedAuthentications}" varStatus="loopStatus" begin="0" end="${fn:length(chainedAuthentications)}" step="1">
-                    <cas:proxy>${fn:escapeXml(proxy.principal.id)}</cas:proxy>
-                </c:forEach>
-            </cas:proxies>
-        </c:if>
         <c:if test="${fn:length(assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].principal.attributes) > 0}">
             <cas:attributes>
                 <c:forEach var="attr" items="${assertion.chainedAuthentications[fn:length(assertion.chainedAuthentications)-1].principal.attributes}">
                     <cas:${fn:escapeXml(attr.key)}>${fn:escapeXml(attr.value)}</cas:${fn:escapeXml(attr.key)}>
                 </c:forEach>
             </cas:attributes>
+        </c:if>
+        <c:if test="${fn:length(chainedAuthentications) > 0}">
+            <cas:proxies>
+                <c:forEach var="proxy" items="${chainedAuthentications}" varStatus="loopStatus" begin="0" end="${fn:length(chainedAuthentications)}" step="1">
+                    <cas:proxy>${fn:escapeXml(proxy.principal.id)}</cas:proxy>
+                </c:forEach>
+            </cas:proxies>
         </c:if>
     </cas:authenticationSuccess>
 </cas:serviceResponse>

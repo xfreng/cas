@@ -36,8 +36,8 @@
             <tr>
                 <td><img src="${registeredServiceLogo}"></td>
                 <td id="servicedesc">
-                    <h1 style="background:url('${fn:escapeXml(registeredServiceName)}') no-repeat;height:20px;margin-left:-6px;">&nbsp;</h1>
-                    <p style="background:url('${fn:escapeXml(registeredServiceDescription)}') no-repeat;height:30px;">&nbsp;</p>
+                    <h1 style="background:url('${fn:escapeXml(registeredServiceName)}') no-repeat;height:20px;">&nbsp;</h1>
+                    <p style="background:url('${fn:escapeXml(registeredServiceDescription)}') no-repeat;height:30px;margin-left:-6px;">&nbsp;</p>
                 </td>
             </tr>
         </table>
