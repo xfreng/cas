@@ -36,8 +36,16 @@
             <tr>
                 <td><img src="${registeredServiceLogo}"></td>
                 <td id="servicedesc">
-                    <h1 style="background:url('${fn:escapeXml(registeredServiceName)}') no-repeat;height:20px;">&nbsp;</h1>
-                    <p style="background:url('${fn:escapeXml(registeredServiceDescription)}') no-repeat;height:30px;margin-left:-6px;">&nbsp;</p>
+                    <c:choose>
+                        <c:when test="${fn:contains(fn:escapeXml(registeredServiceName), 'images')}">
+                            <h1 style="background:url('${fn:escapeXml(registeredServiceName)}') no-repeat;height:20px;">&nbsp;</h1>
+                            <p style="background:url('${fn:escapeXml(registeredServiceDescription)}') no-repeat;height:30px;margin-left:-6px;">&nbsp;</p>
+                        </c:when>
+                        <c:otherwise>
+                            <h1>${fn:escapeXml(registeredServiceName)}</h1>
+                            <p>${fn:escapeXml(registeredServiceDescription)}</p>
+                        </c:otherwise>
+                    </c:choose>
                 </td>
             </tr>
         </table>
