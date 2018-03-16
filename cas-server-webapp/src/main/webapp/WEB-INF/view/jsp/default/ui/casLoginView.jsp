@@ -90,7 +90,7 @@
         <section class="row">
             <label for="rand"><spring:message code="screen.welcome.label.rand" /></label>
             <form:input cssClass="required" cssErrorClass="error" id="rand" size="25" tabindex="3" path="rand" autocomplete="off" htmlEscape="true" />
-            <div style="margin-top:-30px;height:30px;width:150px;text-align:center;margin-left:220px;float:left;vertical-align:middle; display: table-cell;">
+            <div style="margin-top:-30px;height:30px;width:150px;text-align:center;margin-left:256px;float:left;vertical-align:middle; display: table-cell;">
                 <a href="javascript:loadImage('#sRand','${pageContext.request.contextPath}');" onclick="loadImage('#sRand','${pageContext.request.contextPath}');" style="width:130px;height:30px;">
                     <span style="display: block;float:left;width:60px;height:25px;float:left;">
                         <img id="sRand" title="<spring:message code="screen.welcome.label.rand.title" />" width="65" height="30" src="<spring:url value="/randImage" />" style="padding-left: 5px;"/>
