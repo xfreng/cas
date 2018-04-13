@@ -4,6 +4,7 @@
 - 登录验证通过后添加返回参数
 - 登录页布局优化
 - 添加自定义中文提示
+## war包直接下载链接: https://pan.baidu.com/s/1O5rRHVF6Fn1b8TG6Eqj2mA 密码: s8at
 # 登录页图片展示
 ![登录页图片展示](https://raw.githubusercontent.com/xfreng/cas/4.2.8/images/cas-index.png)
 
